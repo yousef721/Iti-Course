@@ -3,7 +3,7 @@
 
 int main()
 {
-    int count;
+    int count; 
     int *ptr; // pointer to hold dynamically allocated array
     
     // 1) Get number of elements from user
