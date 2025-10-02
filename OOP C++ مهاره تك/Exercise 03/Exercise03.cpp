@@ -123,23 +123,6 @@ void ViewContentByCopyCon(Stack x)
 
 int main()
 {
-    // Part 1
-    Stack s1(2);
-    Stack s2(3);
-
-    cout << "\nNumber of Stacks = " << Stack::GetCounter() << endl;
-
-    s1.Push(10);
-    s1.Push(20);
-    s1.Push(30); // will print full
-
-    cout << "Pop: " << s1.Pop() << endl;
-    cout << "Pop: " << s1.Pop() << endl;
-    cout << "Pop: " << s1.Pop() << endl; // will print empty
-
-    cout << "Number of Stacks (before end) = " << Stack::GetCounter() << endl;
-
-    // Part 2
     Stack s(5);
     s.Push(100);
     s.Push(200);

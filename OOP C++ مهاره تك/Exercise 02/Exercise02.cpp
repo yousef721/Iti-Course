@@ -1,4 +1,5 @@
 #include <iostream>
+
 // Complete complex class
 class Complex
 {
@@ -124,29 +125,24 @@ int main()
 {
     // Part 1
     #pragma region : ComplexNumber
+    
         Complex myComp1, myComp2, resultComp;
 
         std::cout << "Please Enter Complex Number 1 : " << std::endl;
+        int real1,img1;
         std::cout << "Real =  ";
-        int real1;
         std::cin >> real1;
-        myComp1.SetReal(real1);
-
         std::cout << "Imaginary =  ";
-        int img1;
         std::cin >> img1;
-        myComp1.SetImg(img1);
+        myComp1.SetComplexNumber(real1,img1);
 
         std::cout << "Please Enter Complex Number 2 : " << std::endl;
+        int real2,img2;
         std::cout << "Real =  ";
-        int real2;
         std::cin >> real2;
-        myComp2.SetReal(real2);
-
         std::cout << "Imaginary =  ";
-        int img2;
         std::cin >> img2;
-        myComp2.SetImg(img2);
+        myComp2.SetReal(real2);
 
         // Print input
         std::cout << "\nYou entered:" << std::endl;
@@ -155,15 +151,6 @@ int main()
         std::cout << "Complex 2 = ";
         myComp2.Print();
 
-        // Add
-        resultComp = myComp1.Add(myComp2);
-        std::cout << "Sum = ";
-        resultComp.Print();
-
-        // Subtract
-        resultComp = myComp1.Subtract(myComp2);
-        std::cout << "Difference = ";
-        resultComp.Print();
     #pragma endregion
     // Part 2
     #pragma region : Stack
